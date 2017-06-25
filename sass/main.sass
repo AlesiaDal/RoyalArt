@@ -1,0 +1,282 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	overflow-x: hidden
+	opacity: 1
+
+header
+	background: #000
+
+ul
+	list-style-type: none
+
+
+.top-line
+	display: inline
+	.border
+		border-bottom: 1px solid #222222
+		width: 100%
+		.col-md-4
+			padding-top: 10px
+			font-size: 12px
+			color: #999999
+			font-family: $default-font
+			span
+				color: #fff
+			ul 
+				float: right
+				li
+					display: inline
+					margin-right: 5px;
+					text-align: right
+					a
+						color: #444444
+						font-size: 16px
+						list-style-type: none
+						&:hover
+							color: #6b6767
+							transition: .25s easy
+.navbar-inverse
+	background: #000
+	margin: 0
+	padding-bottom: 10px
+
+	.navbar-nav
+		li>a
+			color: #fff
+			font-size: 12px
+			padding-right: 50px
+			text-transform: uppercase
+			font-weight: 700
+			&:hover
+				color: $accent
+			.glyphicon-search
+				color: #fff
+				&:hover
+					color: $accent
+		.position-right
+			text-align: center
+			border-right: 1px solid #222222
+
+	.navbar-right 
+    float: right 
+    margin-right: -65px
+    border-right: 1px solid #222222
+    border-left: 1px solid #222222
+	height: 100%
+	top: 0
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover
+	color: #e3c62d
+		
+.navbar-brand>img
+	width: 175px
+	height: 60px
+	margin-top: -20px
+	margin-left: 0px
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand 
+    margin-left: -50px
+
+
+.header-composition
+	img
+		background-size: cover
+		width: 100%
+		position: relative
+		top: 0
+	    left: 0
+	    height: 100%
+	.header-date
+		position: absolute
+		width: 475px
+		color: #fff
+		right: 20px
+		top: 110px
+		padding-left: 30px
+		.caption
+			text-align: center
+			.calendar
+				background-color: rgba(0, 0, 0, 0.7)
+				padding: 20px 0
+				.h2
+					font-size: 80px
+					font-weight: 700
+				.h3
+					font-size: 36px
+					font-weight: 700
+				p
+					font-size: 12px
+					font-weight: 300
+					font-family: $default-font
+			.counter
+				color: #000
+				font-family: $default-font
+				background: #fff
+				padding:
+					top: 20px
+					left: 5px
+					right: 5px
+					margin: 0
+					width: 100%
+				.h2
+					font-size: 20px
+					font-weight: 700
+					margin-top: 20px
+					padding: 0
+				.h1
+					font-size: 32px
+					font-weight: 800
+					margin: 0
+					padding-bottom: 20px
+				.counter-slogan
+					color: #444444
+					font-size: 14px
+				p
+					font-size: 16px
+					color: #444444
+					padding: 20px 0
+.btn
+	margin-top: 20px
+
+	.button
+		display: inline-block
+		border: none
+		color: #fff
+		text-decoration: none
+		background-color: #fce231
+		padding: 7px 20px
+		font-size: 12px
+		text-transform: uppercase
+		font-weight: 300
+		letter-spacing: 2px
+		border-radius: 2px
+		text-align: center
+		position: relative
+		outline: none
+		transition: background-color .1s ease
+		
+		&:focus, &:hover
+			text-decoration: none
+			color: #fff
+		&:hover
+			background-color: lighten($accent, 5%)
+			&::after
+				opacity: .22
+		&:active
+			background-color: darken($accent, 5%)
+			&::after
+				opacity: .32
+	a
+		text-decoration: none
+
+
+
+/*.main-content img
+	position: absolute
+	background-size: cover
+.main-content h2
+	position: relative
+	text-align: center
+	font-family: "Helvetica"
+	font-size: 32px
+	color: #2d2d2d
+	text-decoration: underline
+
+.products.row
+	margin-top: 30px
+	padding-bottom: 50px
+	border-bottom: 1px solid #eeeeee
+	.product:hover
+		box-shadow: 0 0 16px rgba(0,0,0,.5)
+		overflow: visible
+		width: 200px
+		padding: 30px
+		-webkit-transition: all 0.3s ease
+  		-moz-transition: all 0.3s ease
+  		-o-transition: all 0.3s ease
+  		transition: all 0.3s ease
+	.product.img img
+		position: relative
+		border: 2px #bfbfbf solid !important
+		padding: 5px
+
+	.product-title
+		width: 	170px
+		margin-top: 200px	
+		font-weight: 300
+		font-weight: 	14px
+		color: #000
+		overflow:visible
+		max-height: 100px
+		line-height: 1.2
+	.product-buy .product-price
+			font-size: 18px
+			font-weight: 700
+
+	.product-buy .btn
+			border: 1px solid #063397
+			padding: 3px 25px
+			color: #063397
+			font-size: 	14px
+			text-align: center
+			i
+				font-size: 	24px
+				padding-right: 	10px 	
+	.product-buy .btn:hover
+			background: #063397
+			color: #fff
+
+	.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default
+			background: #063397
+			color: #fff
+footer .container
+	padding-top: 20px
+	background: #f7f7f7
+	font-family: Arial
+	h4
+		font-size: 16px
+		font-weight: 700 
+		text-align: center
+footer .container ul 
+	list-style-type:none
+	a
+		font-size: 12px
+		color: #999999
+		text-decoration: underline*/
+	  
+
+			
+
+@import "media" 
